@@ -1,0 +1,136 @@
+
+
+[info] 2015-08-14 22:45:33
+[info] Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.20-b23 mixed mode):
+[info] 
+[info] "on-to-one-proxy-akka.actor.default-dispatcher-12" #22 prio=5 os_prio=31 tid=0x00007fb45d15d000 nid=0x5907 waiting on condition [0x000000012d19a000]
+[info]    java.lang.Thread.State: TIMED_WAITING (parking)
+[info] 	at sun.misc.Unsafe.park(Native Method)
+[info] 	- parking to wait for  <0x000000076eb006d0> (a akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinPool)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.idleAwaitWork(ForkJoinPool.java:2135)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.scan(ForkJoinPool.java:2067)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] "on-to-one-proxy-akka.actor.default-dispatcher-11" #21 prio=5 os_prio=31 tid=0x00007fb45c979800 nid=0x370f waiting on condition [0x000000012d097000]
+[info]    java.lang.Thread.State: WAITING (parking)
+[info] 	at sun.misc.Unsafe.park(Native Method)
+[info] 	- parking to wait for  <0x000000076eb006d0> (a akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinPool)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.scan(ForkJoinPool.java:2075)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] "on-to-one-proxy-akka.actor.default-dispatcher-10" #20 prio=5 os_prio=31 tid=0x00007fb45c978800 nid=0x5b0b waiting on condition [0x000000012a87f000]
+[info]    java.lang.Thread.State: WAITING (parking)
+[info] 	at sun.misc.Unsafe.park(Native Method)
+[info] 	- parking to wait for  <0x000000076eb006d0> (a akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinPool)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.scan(ForkJoinPool.java:2075)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] "on-to-one-proxy-akka.actor.default-dispatcher-7" #17 prio=5 os_prio=31 tid=0x00007fb45c022000 nid=0x5707 waiting on condition [0x000000012cf94000]
+[info]    java.lang.Thread.State: WAITING (parking)
+[info] 	at sun.misc.Unsafe.park(Native Method)
+[info] 	- parking to wait for  <0x000000076eb006d0> (a akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinPool)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.scan(ForkJoinPool.java:2075)
+[info] 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[info] 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[info] 
+[info] "DestroyJavaVM" #15 prio=5 os_prio=31 tid=0x00007fb45d1d3000 nid=0x1303 waiting on condition [0x0000000000000000]
+[info]    java.lang.Thread.State: RUNNABLE
+[info] 
+[info] "on-to-one-proxy-akka.io.pinned-dispatcher-5" #14 prio=5 os_prio=31 tid=0x00007fb45c17b800 nid=0x6207 runnable [0x000000012d4c4000]
+[info]    java.lang.Thread.State: RUNNABLE
+[info] 	at sun.nio.ch.KQueueArrayWrapper.kevent0(Native Method)
+[info] 	at sun.nio.ch.KQueueArrayWrapper.poll(KQueueArrayWrapper.java:198)
+[info] 	at sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:103)
+[info] 	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+[info] 	- locked <0x000000076eb281f0> (a sun.nio.ch.Util$2)
+[info] 	- locked <0x000000076eb28200> (a java.util.Collections$UnmodifiableSet)
+[info] 	- locked <0x000000076eb281a0> (a sun.nio.ch.KQueueSelectorImpl)
+[info] 	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+[info] 	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+[info] 	at akka.io.SelectionHandler$ChannelRegistryImpl$$anon$3.tryRun(SelectionHandler.scala:114)
+[info] 	at akka.io.SelectionHandler$ChannelRegistryImpl$Task.run(SelectionHandler.scala:215)
+[info] 	at akka.io.SelectionHandler$ChannelRegistryImpl$$anon$3.run(SelectionHandler.scala:147)
+[info] 	at akka.util.SerializedSuspendableExecutionContext.run$1(SerializedSuspendableExecutionContext.scala:68)
+[info] 	at akka.util.SerializedSuspendableExecutionContext.run(SerializedSuspendableExecutionContext.scala:72)
+[info] 	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+[info] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+[info] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+[info] 	at java.lang.Thread.run(Thread.java:745)
+[info] 
+[info] "on-to-one-proxy-scheduler-1" #10 prio=5 os_prio=31 tid=0x00007fb45c992000 nid=0x5503 waiting on condition [0x000000012cc91000]
+[info]    java.lang.Thread.State: TIMED_WAITING (sleeping)
+[info] 	at java.lang.Thread.sleep(Native Method)
+[info] 	at akka.actor.LightArrayRevolverScheduler.waitNanos(Scheduler.scala:226)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anon$8.nextTick(Scheduler.scala:405)
+[info] 	at akka.actor.LightArrayRevolverScheduler$$anon$8.run(Scheduler.scala:375)
+[info] 	at java.lang.Thread.run(Thread.java:745)
+[info] 
+[info] "Service Thread" #9 daemon prio=9 os_prio=31 tid=0x00007fb45c00a800 nid=0x5103 runnable [0x0000000000000000]
+[info]    java.lang.Thread.State: RUNNABLE
+[info] 
+[info] "C1 CompilerThread3" #8 daemon prio=9 os_prio=31 tid=0x00007fb45c825000 nid=0x4f03 waiting on condition [0x0000000000000000]
+[info]    java.lang.Thread.State: RUNNABLE
+[info] 
+[info] "C2 CompilerThread2" #7 daemon prio=9 os_prio=31 tid=0x00007fb45f056800 nid=0x4d03 waiting on condition [0x0000000000000000]
+[info]    java.lang.Thread.State: RUNNABLE
+[info] 
+[info] "C2 CompilerThread1" #6 daemon prio=9 os_prio=31 tid=0x00007fb45f056000 nid=0x4b03 waiting on condition [0x0000000000000000]
+[info]    java.lang.Thread.State: RUNNABLE
+[info] 
+[info] "C2 CompilerThread0" #5 daemon prio=9 os_prio=31 tid=0x00007fb45d00a800 nid=0x4903 waiting on condition [0x0000000000000000]
+[info]    java.lang.Thread.State: RUNNABLE
+[info] 
+[info] "Signal Dispatcher" #4 daemon prio=9 os_prio=31 tid=0x00007fb45c82a000 nid=0x3a0b waiting on condition [0x0000000000000000]
+[info]    java.lang.Thread.State: RUNNABLE
+[info] 
+[info] "Finalizer" #3 daemon prio=8 os_prio=31 tid=0x00007fb45f052800 nid=0x3503 in Object.wait() [0x000000012a736000]
+[info]    java.lang.Thread.State: WAITING (on object monitor)
+[info] 	at java.lang.Object.wait(Native Method)
+[info] 	- waiting on <0x000000076eb38a50> (a java.lang.ref.ReferenceQueue$Lock)
+[info] 	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:142)
+[info] 	- locked <0x000000076eb38a50> (a java.lang.ref.ReferenceQueue$Lock)
+[info] 	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:158)
+[info] 	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+[info] 
+[info] "Reference Handler" #2 daemon prio=10 os_prio=31 tid=0x00007fb45f051800 nid=0x3303 in Object.wait() [0x000000012a633000]
+[info]    java.lang.Thread.State: WAITING (on object monitor)
+[info] 	at java.lang.Object.wait(Native Method)
+[info] 	- waiting on <0x000000076eb38c08> (a java.lang.ref.Reference$Lock)
+[info] 	at java.lang.Object.wait(Object.java:502)
+[info] 	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:157)
+[info] 	- locked <0x000000076eb38c08> (a java.lang.ref.Reference$Lock)
+[info] 
+[info] "VM Thread" os_prio=31 tid=0x00007fb45f04f000 nid=0x3103 runnable 
+[info] 
+[info] "GC task thread#0 (ParallelGC)" os_prio=31 tid=0x00007fb45c018800 nid=0x2103 runnable 
+[info] 
+[info] "GC task thread#1 (ParallelGC)" os_prio=31 tid=0x00007fb45c019000 nid=0x2303 runnable 
+[info] 
+[info] "GC task thread#2 (ParallelGC)" os_prio=31 tid=0x00007fb45c019800 nid=0x2503 runnable 
+[info] 
+[info] "GC task thread#3 (ParallelGC)" os_prio=31 tid=0x00007fb45e800000 nid=0x2703 runnable 
+[info] 
+[info] "GC task thread#4 (ParallelGC)" os_prio=31 tid=0x00007fb45f000000 nid=0x2903 runnable 
+[info] 
+[info] "GC task thread#5 (ParallelGC)" os_prio=31 tid=0x00007fb45f001000 nid=0x2b03 runnable 
+[info] 
+[info] "GC task thread#6 (ParallelGC)" os_prio=31 tid=0x00007fb45f001800 nid=0x2d03 runnable 
+[info] 
+[info] "GC task thread#7 (ParallelGC)" os_prio=31 tid=0x00007fb45f002000 nid=0x2f03 runnable 
+[info] 
+[info] "VM Periodic Task Thread" os_prio=31 tid=0x00007fb45d060000 nid=0x5303 waiting on condition 
+[info] 
+[info] JNI global references: 186
+[info] 
+[info] Heap
+[info]  PSYoungGen      total 76288K, used 14779K [0x000000076ab00000, 0x0000000770000000, 0x00000007c0000000)
+[info]   eden space 65536K, 6% used [0x000000076ab00000,0x000000076aef5a20,0x000000076eb00000)
+[info]   from space 10752K, 99% used [0x000000076eb00000,0x000000076f579210,0x000000076f580000)
+[info]   to   space 10752K, 0% used [0x000000076f580000,0x000000076f580000,0x0000000770000000)
+[info]  ParOldGen       total 175104K, used 535K [0x00000006c0000000, 0x00000006cab00000, 0x000000076ab00000)
+[info]   object space 175104K, 0% used [0x00000006c0000000,0x00000006c0085f38,0x00000006cab00000)
+[info]  Metaspace       used 15130K, capacity 15196K, committed 15360K, reserved 1062912K
+[info]   class space    used 2230K, capacity 2262K, committed 2304K, reserved 1048576K
