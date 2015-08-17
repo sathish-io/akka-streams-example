@@ -1,13 +1,12 @@
 import scalariform.formatter.preferences._
 
-name := "akka-stream-scala"
+name := "akka-streams-example"
 
 version := "1.1"
 
 scalaVersion := "2.11.7"
 
 libraryDependencies ++= Seq(
-//  "com.typesafe.akka" %% "akka-stream-experimental" % "1.0"
   "com.typesafe.akka" % "akka-stream-experimental_2.11" % "1.0"
 )
 
